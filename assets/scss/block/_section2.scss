@@ -1,0 +1,76 @@
+@media screen and (max-width: 913px) {
+    .yootheme {
+        width: $vp-full;
+        height: 10vh;
+        margin-top: 35px;
+        gap: $gap;
+        flex-direction: column;
+        @include d-flex(flex, space-between, center);
+        @include padding(2%, 2%);
+
+        &__primery {
+            flex: 1;
+            font-size: $font-size-larger;
+        }
+
+        &__secendry {
+            flex: 4;
+        }
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 913px) {
+    .yootheme {
+        width: $vp-full;
+        height: $hg-10vh;
+        margin: $margin-top-bottom 0;
+        gap: $gap;
+        @include d-flex(flex, space-between, center);
+        @include padding(1%, 1%);
+
+        &__primery {
+            flex: 1;
+            font-size: $font-size-larger;
+        }
+
+        &__secendry {
+            flex: 4;
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    .yootheme {
+        width: $vp-full;
+        height: 190px;
+        margin-top: -50px;
+        gap: $gap;
+        flex-direction: column;
+        @include d-flex(flex, space-between, center);
+        @include padding(2%, 2%);
+
+        &__primery {
+            flex: 1;
+            font-size: $font-size-larger;
+        }
+
+        &__secendry {
+            flex: 4;
+        }
+    }
+}
+
+
+
+
+#blue {
+    color: $bg-a-blue-hover;
+}

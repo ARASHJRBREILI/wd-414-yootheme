@@ -1,0 +1,231 @@
+@media screen and (min-width: 913px) {
+    .header {
+        width: $full-width;
+        height: $hg-header-desktop;
+        background-color: $bg-white;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+
+        // flex-wrap: wrap;
+        @include padding(1%, 1%);
+        @include d-flex(flex, space-between, center);
+
+
+        &__logo {
+            width: $vp-15;
+            height: $hg-fullheight;
+            margin: $margin-0;
+            @include d-flex(flex, flex-start, center);
+
+
+            img {
+                width: $vp-120px;
+                height: $hg-120px;
+            }
+        }
+
+
+        &__nav {
+            width: $full-width;
+            flex: 4;
+            @include d-flex(flex, flex-end, center);
+
+
+            &--white {
+                @include a(none, rgb(96, 96, 96), 8px 20px, white, 0);
+            }
+
+
+            &--blue {
+                @include a(none, white, 8px 20px, #4c89f2, 20px);
+            }
+
+
+            a {
+                position: $position-relative;
+                overflow: hidden;
+            }
+
+
+            a:hover:not(:nth-child(10)) {
+                color: $text-hover-black;
+            }
+
+
+            a:hover:nth-child(10) {
+                background-color: $bg-a-blue-hover;
+            }
+
+
+            a:not(:nth-child(10))::before {
+                content: "";
+                background-color: $bg-blue;
+                display: $display-inline-block;
+                width: $vp-full;
+                height: 2px;
+                position: $position-absolute;
+                top: 78%;
+                left: 0;
+                transform: rotateY(90deg);
+                transition: 1S;
+            }
+
+            a:hover::before {
+                transform: rotateX(0);
+            }
+        }
+
+
+        &__icon {
+            @include d-flex(none, flex-end, center);
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 913px) {
+    .header {
+        width: $full-width;
+        height: $hg-header-9vh;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        @include padding(4%, 4%);
+        @include d-flex(flex, space-between, center);
+
+
+        &__logo {
+            width: $vp-25;
+            height: $hg-fullheight;
+            margin: $margin-0;
+            @include d-flex(flex, flex-start, center);
+
+            img {
+                width: 140px;
+                height: 120px;
+            }
+        }
+
+
+        &__nav {
+            width: $vp-20;
+            padding: 5px;
+            @include d-none(absolute, 100%, 0, column);
+            @include d-flex(none, center, flex-start);
+
+
+            &--white,
+            &--blue {
+                @include a-tablet-mobile(none, black, 8px 12px, 10px)
+            }
+
+            a {
+                padding: 7px 13px;
+                font-size: $font-size-1-1;
+            }
+
+
+            a:hover:not(:nth-child(10)) {
+                color: $text-hover-black;
+            }
+
+            a:hover:nth-child(10) {
+                background-color: $bg-a-blue-hover;
+            }
+        }
+
+        .show {
+            display: flex;
+            z-index: 1000;
+            width: 25%;
+            backdrop-filter: blur(4px);
+        }
+
+
+        &__icon {
+            @include d-flex(flex, flex-end, center);
+
+            i {
+                font-size: $font-size-1-1;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    .header {
+        min-width: $full-width;
+        height: $hg-header-9vh;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        background-color: $bg-white;
+        // position: $position-relative;
+        @include padding(4%, 4%);
+        @include d-flex(flex, space-between, center);
+
+
+        &__logo {
+            width: $vp-20;
+            height: $hg-header-9vh;
+            flex: 0.5;
+            margin: $margin-0;
+            @include d-flex(flex, flex-start, center);
+
+            a {
+                padding: 5px 13px;
+                font-size: $font-size-1-1;
+            }
+
+            img {
+                width: 120px;
+                height: 140px;
+            }
+
+
+            h1 {
+                font-size: $font-size-1;
+            }
+        }
+
+        &__nav {
+            // width: 42%;
+            @include d-none(absolute, 100%, 0, column);
+            @include d-flex(none, center, flex-start);
+
+
+            &--white,
+            &--blue {
+                @include a-tablet-mobile(none, black, 8px 12px, 10px)
+            }
+        }
+
+        .show {
+            display: flex;
+            z-index: 2;
+            background-color: rgba(130, 130, 130, 0.3);
+            width: 50%;
+        }
+
+
+        &__icon {
+            color: $text-black;
+
+
+            i {
+                font-size: $font-size-1-1;
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+@mixin d-flex($flex, $justify-content, $align-items) {
+    display: $flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin padding($padding-left, $padding-right) {
+    padding-left: $padding-left;
+    padding-right: $padding-right;
+}
+
+@mixin bg-set($background-repeat, $background-size, $background-position) {
+    background-repeat: $background-repeat;
+    background-size: $background-size;
+    background-position: $background-position;
+}
+
+@mixin a($text-decoration, $color, $padding, $bg-color, $border-radius) {
+    text-decoration: $text-decoration;
+    color: $color;
+    padding: $padding;
+    background-color: $bg-color;
+    border-radius: $border-radius;
+}
+
+@mixin a-tablet-mobile($text-decoration, $color, $padding, $border-radius) {
+    text-decoration: $text-decoration;
+    color: $color;
+    padding: $padding;
+    border-radius: $border-radius;
+    // backdrop-filter: blur(4px);
+}
+
+
+@mixin a-white-bg() {
+    text-decoration: $text-decoration;
+    color: $text-black;
+    padding: $padding;
+    background-color: $bg-white;
+    border-radius: $border-radius;
+}
+
+@mixin a-hover($background-color, $color) {
+    background-color: $background-color;
+    color: $color;
+}
+
+
+@mixin d-none($position, $top, $right, $flex-direction) {
+    position: $position;
+    top: $top;
+    right: $right;
+    flex-direction: $flex-direction;
+}
+
+@mixin image-card($width, $margin, $height, $margin-bottom, $box-shadow) {
+    width: 95%;
+    margin: auto;
+    height: 75%;
+    margin-bottom: 0px;
+    box-shadow: 0px 0px 10px 5px rgba(141, 141, 141, 0.3);
+}
+
+@mixin flex-column($display, $flex-direction, $justify-content, $align-items) {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
