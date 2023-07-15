@@ -1,0 +1,242 @@
+@media screen and (min-width: 913px) {
+    .advertising {
+        width: $vp-full;
+        height: 70px;
+        background-color: black;
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__general1 {
+            background-color: $bg-blue;
+            @include d-flex(flex, center, center);
+            @include advertising(0 10px, 55px, 55px, 50%);
+
+            i {
+                color: black;
+                font-size: 25px;
+            }
+        }
+
+        &__general1:hover {
+            outline-offset: 4px;
+            background: linear-gradient(45deg, red, blue);
+
+            i {
+                color: white;
+            }
+        }
+
+        &__general1:hover i {
+            animation: shake 1s;
+        }
+
+        @keyframes shake {
+            10% {
+                transform: rotate(20deg);
+            }
+
+            20% {
+                transform: rotate(-20deg);
+            }
+
+            30% {
+                transform: rotate(20deg);
+            }
+
+            40% {
+                transform: rotate(-20deg);
+            }
+
+        }
+
+
+        &__general2 {
+            background-color: $bg-blue;
+            @include d-flex(flex, center, center);
+            @include advertising(0 10px, 55px, 55px, 50%);
+
+            i {
+                color: black;
+                font-size: 25px;
+            }
+        }
+
+        &__general2:hover {
+            outline-offset: 4px;
+            background: linear-gradient(45deg, red, blue);
+
+            i {
+                color: white;
+            }
+        }
+
+        &__general2:hover i {
+            animation: shake 1s;
+        }
+
+        &__general3 {
+            background-color: $bg-blue;
+            @include d-flex(flex, center, center);
+            @include advertising(0 10px, 55px, 55px, 50%);
+
+            i {
+                color: black;
+                font-size: 25px;
+            }
+        }
+
+        &__general3:hover {
+            outline-offset: 4px;
+        }
+
+        &__general3:hover {
+            outline-offset: 4px;
+            background: linear-gradient(45deg, red, blue);
+
+            i {
+                color: white;
+            }
+        }
+
+        &__general3:hover i {
+            animation: shake 1s;
+        }
+
+        &__general4 {
+            background-color: $bg-blue;
+            @include d-flex(flex, center, center);
+            @include advertising(0 10px, 55px, 55px, 50%);
+
+            i {
+                color: black;
+                font-size: 25px;
+            }
+        }
+
+        &__general4:hover {
+            outline-offset: 4px;
+        }
+
+        &__general4:hover {
+            outline-offset: 4px;
+        }
+
+        &__general4:hover {
+            outline-offset: 4px;
+            background: linear-gradient(45deg, red, blue);
+
+            i {
+                color: white;
+            }
+        }
+
+        &__general4:hover i {
+            animation: shake 1s;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 913px) {
+    .advertising {
+        width: $vp-full;
+        height: 70px;
+        background-color: black;
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__general1 {
+            background-color: $bg-blue;
+            @include d-flex(flex, center, center);
+            @include advertising(0 10px, 55px, 55px, 50%);
+
+            i {
+                color: black;
+                font-size: 25px;
+            }
+        }
+
+        &__general2 {
+            background-color: $bg-blue;
+            @include d-flex(flex, center, center);
+            @include advertising(0 10px, 55px, 55px, 50%);
+
+            i {
+                color: black;
+                font-size: 25px;
+            }
+        }
+
+        &__general3 {
+            background-color: $bg-blue;
+            @include d-flex(flex, center, center);
+            @include advertising(0 10px, 55px, 55px, 50%);
+
+            i {
+                color: black;
+                font-size: 25px;
+            }
+        }
+
+        &__general4 {
+            background-color: $bg-blue;
+            @include d-flex(flex, center, center);
+            @include advertising(0 10px, 55px, 55px, 50%);
+
+            i {
+                color: black;
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    .advertising {
+        width: $vp-full;
+        height: 70px;
+        background-color: black;
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__general1 {
+            background-color: $bg-blue;
+            @include d-flex(flex, center, center);
+            @include advertising(0 10px, 55px, 55px, 50%);
+
+            i {
+                color: black;
+            }
+        }
+
+        &__general2 {
+            background-color: $bg-blue;
+            @include d-flex(flex, center, center);
+            @include advertising(0 10px, 55px, 55px, 50%);
+
+        }
+
+        &__general3 {
+            background-color: $bg-blue;
+            @include d-flex(flex, center, center);
+            @include advertising(0 10px, 55px, 55px, 50%);
+        }
+
+        &__general4 {
+            background-color: $bg-blue;
+            @include d-flex(flex, center, center);
+            @include advertising(0 10px, 55px, 55px, 50%);
+        }
+    }
+}

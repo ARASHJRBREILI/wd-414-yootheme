@@ -1,341 +1,29 @@
-@media screen and (max-width: 913px) {
-    .hide {
-        width: $hg-98;
-        height: $hg-1200px;
-        @include flex-column(flex, column, flex-start, flex-start);
-
-        &__introdution {
-            display: none;
-        }
-
-        &__explanation {
-            width: $vp-full;
-            height: $vp-50;
-            flex-direction: $flex-direction-row;
-            @include padding(2%, 2%);
-            // @include d-flex(flex, space-between, space-between);
-
-            &__services {
-                width: $vp-full;
-                height: $hg-600px;
-                flex-direction: $flex-direction;
-                @include d-flex(flex, center, flex-start);
-
-                &__top {
-                    width: $vp-full;
-                    height: $hg-80;
-                    flex-direction: $flex-direction;
-                    background-image: url(../images/juno/preview-88c7d92d.webp);
-                    @include bg-set(no-repeat, cover, center);
-                    @include d-flex(flex, space-evenly, center);
-                    @include image-card(98%, auto, 75%, 0px, 0px 0px 10px 5px rgba(141, 141, 141, 0.3));
-
-                    &--blue {
-                        @include a(none, white, 12px 24px, #4c89f2, 20px);
-                    }
-
-                    &--white {
-                        @include a(none, rgb(255, 254, 254), 12px 24px, rgb(169, 169, 169), 20px);
-                    }
-                }
-
-                &__buttom {
-                    width: $vp-full;
-                    height: $hg-20;
-                    flex-direction: $flex-direction;
-                    @include d-flex(flex, center, flex-start);
-                }
-            }
-
-            &__services1 {
-                width: $vp-full;
-                height: 600px;
-                flex-direction: $flex-direction;
-                @include d-flex(flex, center, flex-start);
-
-                &__top {
-                    width: $vp-full;
-                    height: 80%;
-                    flex-direction: $flex-direction;
-                    background-image: url(../images/trek/trek\ bg.webp);
-                    @include bg-set(no-repeat, cover, center);
-                    @include d-flex(flex, space-evenly, center);
-                    @include image-card(98%, auto, 75%, 0px, 0px 0px 10px 5px rgba(141, 141, 141, 0.3));
-
-                    &--blue {
-                        @include a(none, white, 12px 24px, #4c89f2, 20px);
-                    }
-
-                    &--white {
-                        @include a(none, rgb(255, 254, 254), 12px 24px, rgb(169, 169, 169), 20px);
-                    }
-                }
-
-                &__buttom {
-                    width: $vp-full;
-                    height: 20%;
-                    flex-direction: $flex-direction;
-                    @include d-flex(flex, center, flex-start);
-                }
-            }
-
-            &__services2 {
-                width: $vp-full;
-                height: 600px;
-                flex-direction: $flex-direction;
-                @include d-flex(flex, center, flex-start);
-
-                &__top {
-                    width: $vp-full;
-                    height: 80%;
-                    flex-direction: $flex-direction;
-                    background-image: url(../images/gravity/gravity-bg.jpeg);
-                    @include bg-set(no-repeat, cover, center);
-                    @include d-flex(flex, space-evenly, center);
-                    @include image-card(98%, auto, 75%, 0px, 0px 0px 10px 5px rgba(141, 141, 141, 0.3));
-
-                    &--blue {
-                        @include a(none, white, 12px 24px, #4c89f2, 20px);
-                    }
-
-                    &--white {
-                        @include a(none, rgb(255, 254, 254), 12px 24px, rgb(169, 169, 169), 20px);
-                    }
-                }
-
-                &__buttom {
-                    width: $vp-full;
-                    height: 20%;
-                    flex-direction: $flex-direction;
-                    @include d-flex(flex, center, flex-start);
-                }
-            }
-
-            &__services3 {
-                width: $vp-full;
-                height: 600px;
-                flex-direction: $flex-direction;
-                @include d-flex(flex, center, flex-start);
-
-                &__top {
-                    width: $vp-full;
-                    height: 80%;
-                    flex-direction: $flex-direction;
-                    background-image: url(../images/balou/balou.webp);
-                    @include bg-set(no-repeat, cover, center);
-                    @include d-flex(flex, space-evenly, center);
-                    @include image-card(98%, auto, 75%, 0px, 0px 0px 10px 5px rgba(141, 141, 141, 0.3));
-
-                    &--blue {
-                        @include a(none, white, 12px 24px, #4c89f2, 20px);
-                    }
-
-                    &--white {
-                        @include a(none, rgb(255, 254, 254), 12px 24px, rgb(169, 169, 169), 20px);
-                    }
-                }
-
-                &__buttom {
-                    width: $vp-full;
-                    height: 20%;
-                    flex-direction: $flex-direction;
-                    @include d-flex(flex, center, flex-start);
-                }
-            }
-
-            .vp100 {
-                width: $vp-full;
-            }
-
-            .cn-big {
-                background-color: rgb(169, 169, 169);
-                width: 40px;
-                height: 40px;
-            }
-        }
-
-        &__explanation1 {
-
-            width: 100%;
-            height: 50%;
-            flex-direction: $flex-direction;
-            @include padding(2%, 2%);
-            @include d-flex(flex, center, center);
-
-            &__services {
-                width: $vp-full;
-                height: 600px;
-                flex-direction: $flex-direction;
-                @include d-flex(flex, center, flex-start);
-
-                &__top {
-                    width: $vp-full;
-                    height: 80%;
-                    flex-direction: $flex-direction;
-                    background-image: url(../images/maki/maki-bg.jpeg);
-                    @include bg-set(no-repeat, cover, center);
-                    @include d-flex(flex, space-evenly, center);
-                    @include image-card(98%, auto, 75%, 0px, 0px 0px 10px 5px rgba(141, 141, 141, 0.3));
-
-                    &--blue {
-                        @include a(none, white, 12px 24px, #4c89f2, 20px);
-                    }
-
-                    &--white {
-                        @include a(none, rgb(255, 254, 254), 12px 24px, rgb(169, 169, 169), 20px);
-                    }
-                }
-
-                &__buttom {
-                    width: $vp-full;
-                    height: 20%;
-                    flex-direction: $flex-direction;
-                    @include d-flex(flex, center, flex-start);
-                }
-            }
-
-            &__services1 {
-                width: $vp-full;
-                height: 600px;
-                flex-direction: $flex-direction;
-                @include d-flex(flex, center, flex-start);
-
-                &__top {
-                    width: $vp-full;
-                    height: 80%;
-                    flex-direction: $flex-direction;
-                    background-image: url(../images/yoko/yoko\ bg.webp);
-                    @include bg-set(no-repeat, cover, center);
-                    @include d-flex(flex, space-evenly, center);
-                    @include image-card(98%, auto, 75%, 0px, 0px 0px 10px 5px rgba(141, 141, 141, 0.3));
-
-                    &--blue {
-                        @include a(none, white, 12px 24px, #4c89f2, 20px);
-                    }
-
-                    &--white {
-                        @include a(none, rgb(255, 254, 254), 12px 24px, rgb(169, 169, 169), 20px);
-                    }
-                }
-
-                &__buttom {
-                    width: $vp-full;
-                    height: 20%;
-                    flex-direction: $flex-direction;
-                    @include d-flex(flex, center, flex-start);
-                }
-            }
-
-            &__services2 {
-                width: $vp-full;
-                height: 600px;
-                flex-direction: $flex-direction;
-                @include d-flex(flex, center, flex-start);
-
-                &__top {
-                    width: $vp-full;
-                    height: 80%;
-                    flex-direction: $flex-direction;
-                    background-image: url(../images/kitchen-daily/kitchen-daily.webp);
-                    @include bg-set(no-repeat, cover, center);
-                    @include d-flex(flex, space-evenly, center);
-                    @include image-card(98%, auto, 75%, 0px, 0px 0px 10px 5px rgba(141, 141, 141, 0.3));
-
-                    &--blue {
-                        @include a(none, white, 12px 24px, #4c89f2, 20px);
-                    }
-
-                    &--white {
-                        @include a(none, rgb(255, 254, 254), 12px 24px, rgb(169, 169, 169), 20px);
-                    }
-                }
-
-                &__buttom {
-                    width: $vp-full;
-                    height: 20%;
-                    flex-direction: $flex-direction;
-                    @include d-flex(flex, center, flex-start);
-                }
-            }
-
-            &__services3 {
-                width: $vp-full;
-                height: 600px;
-                flex-direction: $flex-direction;
-                @include d-flex(flex, center, flex-start);
-
-                &__top {
-                    width: $vp-full;
-                    height: 80%;
-                    flex-direction: $flex-direction;
-                    background-image: url(../images/framerate/preview-f020a8bc.webp);
-                    @include bg-set(no-repeat, cover, center);
-                    @include d-flex(flex, space-evenly, center);
-                    @include image-card(98%, auto, 75%, 0px, 0px 0px 10px 5px rgba(141, 141, 141, 0.3));
-
-                    &--blue {
-                        @include a(none, white, 12px 24px, #4c89f2, 20px);
-                    }
-
-                    &--white {
-                        @include a(none, rgb(255, 254, 254), 12px 24px, rgb(169, 169, 169), 20px);
-                    }
-                }
-
-                &__buttom {
-                    width: $vp-full;
-                    height: 20%;
-                    flex-direction: $flex-direction;
-                    @include d-flex(flex, center, flex-start);
-                }
-            }
-
-            .vp100 {
-                width: $vp-full;
-            }
-
-            .cn-big {
-                background-color: rgb(169, 169, 169);
-                width: 40px;
-                height: 40px;
-            }
-        }
-
-        .hidden {
-            display: none;
-        }
-    }
-}
-
-
-
-
-
-
-
-
 @media screen and (min-width: 913px) {
     .hide {
-        width: $vp-full;
-        height: 125vh;
-        margin: $margin-auto;
-        gap: $gap-20;
-        @include padding(1%, 1%);
-        @include d-flex(flex, none, flex-start);
+        margin: auto;
+        gap: 30px;
+        @include flex-column(flex, row, flex-start, flex-start);
+        @include space-card-monile(98%, 200vh);
 
         &__introdution {
             flex: 0.5;
-            height: $hg-fullheight;
-            @include flex-column(flex, column, none, flex-start);
+            height: 100%;
+            @include flex-column(flex, column, flex-start, flex-start);
 
             &__introdution1 {
-                width: $vp-70;
-                height: $hg-50;
+                width: 100%;
+                height: 30%;
+                line-height: $line-height-1-7;
 
                 a {
                     position: $position-relative;
-                    @include a(none, rgb(96, 96, 96), 8px 0px, transparent, 0);
+                    overflow: hidden;
                 }
+
+                a:hover {
+                    color: $text-hover-black;
+                }
+
 
                 a::before {
                     content: "";
@@ -344,14 +32,10 @@
                     width: $vp-full;
                     height: 2px;
                     position: $position-absolute;
-                    top: 78%;
+                    top: 90%;
                     left: 0;
                     transform: rotateY(90deg);
-                    transition: 1S;
-                }
-
-                a:hover {
-                    color: $text-hover-black;
+                    transition: 0.5S;
                 }
 
                 a:hover::before {
@@ -360,12 +44,16 @@
             }
 
             &__introdution2 {
-                width: $vp-70;
-                @include d-flex(flex, none, flex-start);
+                width: 100%;
+                line-height: $line-height-1-7;
 
                 a {
                     position: $position-relative;
-                    @include a(none, rgb(96, 96, 96), 8px 0px, transparent, 0);
+                    overflow: hidden;
+                }
+
+                a:hover {
+                    color: $text-hover-black;
                 }
 
                 a::before {
@@ -375,14 +63,10 @@
                     width: $vp-full;
                     height: 2px;
                     position: $position-absolute;
-                    top: 78%;
+                    top: 90%;
                     left: 0;
                     transform: rotateY(90deg);
-                    transition: 1S;
-                }
-
-                a:hover {
-                    color: $text-hover-black;
+                    transition: 0.5S;
                 }
 
                 a:hover::before {
@@ -391,45 +75,50 @@
             }
         }
 
-        &__explanation {
+        &__center-card {
+            flex-wrap: wrap;
             flex: 1;
-            height: 100%;
-            background-color: #4c89f2;
+            @include space-card-monile(100%, 100%);
 
-            &__services {
-                width: 100%;
-                height: 62vh;
-                margin: auto;
-                flex-direction: $flex-direction;
-                @include d-flex(flex, center, flex-start);
+            &__service1 {
+                @include flex-column(flex, column, flex-start, none);
+                @include space-card-monile(100%, 25%);
 
                 &__top {
-                    width: $vp-full;
-                    height: $hg-80;
-                    flex-direction: $flex-direction;
-                    background-image: url(../images/juno/preview-88c7d92d.webp);
-                    @include bg-set(no-repeat, cover, center);
-                    @include d-flex(flex, space-evenly, center);
-                    @include image-card(98%, auto, 75%, 0px, 0px 0px 10px 5px rgba(141, 141, 141, 0.3));
+                    position: $position-relative;
+                    opacity: 100%;
+                    transition: 0.5s;
+                    @include space-card-monile(100%, 80%);
 
                     &--blue {
-                        @include a(none, white, 12px 24px, #4c89f2, 20px);
+                        @include position-botton(absolute, 20%, 50%, none, 3);
+                        @include a(none, white, 8px 20px, #4c89f2, 20px);
                     }
 
-                    &--white {
-                        @include a(none, rgb(255, 254, 254), 12px 24px, rgb(169, 169, 169), 20px);
+                    &--white1 {
+                        @include position-botton(absolute, 45%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
                     }
 
-                    button {
+                    &--white2 {
+                        @include position-botton(absolute, 70%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
+                    }
+
+                    img {
+                        @include space-card-monile(100%, 100%);
+                    }
+
+                    a {
                         opacity: 0;
-                        transition: 0.5s;
+                        transform: 0.5s;
                     }
 
-                    button:nth-child(1):hover {
+                    a:hover:nth-child(2n) {
                         background-color: $bg-a-blue-hover;
                     }
 
-                    button:not(:nth-child(1)):hover {
+                    a:not(:nth-child(2)):hover {
                         background-color: $text-gray;
                         color: $bg-white;
                     }
@@ -437,111 +126,125 @@
 
                 &__top:hover {
                     opacity: 80%;
+                    transition: 0.5s;
 
-                    button {
+                    a {
                         opacity: 1;
                         transition: 0.5s;
                     }
                 }
 
-                &__buttom {
-                    width: $vp-full;
-                    height: $hg-25;
-                    flex-direction: $flex-direction;
-                    @include d-flex(flex, center, flex-start);
+                &__bottom {
+                    @include space-card-monile(100%, 20%);
+                    @include flex-column(flex, column, center, flex-start);
                 }
             }
 
-            &__services1 {
-                width: 100%;
-                height: 62vh;
-                margin: auto;
-                flex-direction: $flex-direction;
-                @include d-flex(flex, center, flex-start);
+            &__service1:hover {
+                box-shadow: 0px 0px 20px 5px rgba(96, 96, 96, 80%);
+            }
+
+
+            &__service2 {
+                @include flex-column(flex, column, flex-start, none);
+                @include space-card-monile(100%, 25%);
 
                 &__top {
-                    width: $vp-full;
-                    height: $hg-80;
-                    flex-direction: $flex-direction;
-                    background-image: url(../images/trek/trek\ bg.webp);
-                    @include bg-set(no-repeat, cover, center);
-                    @include d-flex(flex, space-evenly, center);
-                    @include image-card(98%, auto, 75%, 0px, 0px 0px 10px 5px rgba(141, 141, 141, 0.3));
+                    position: $position-relative;
+                    @include space-card-monile(100%, 80%);
 
                     &--blue {
-                        @include a(none, white, 12px 24px, #4c89f2, 20px);
+                        @include position-botton(absolute, 20%, 50%, none, 3);
+                        @include a(none, white, 8px 20px, #4c89f2, 20px);
                     }
 
-                    &--white {
-                        @include a(none, rgb(255, 254, 254), 12px 24px, rgb(169, 169, 169), 20px);
+                    &--white1 {
+                        @include position-botton(absolute, 45%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
                     }
 
-                    button {
+                    &--white2 {
+                        @include position-botton(absolute, 70%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
+                    }
+
+                    img {
+                        @include space-card-monile(100%, 100%);
+                    }
+
+                    a {
                         opacity: 0;
-                        transition: 0.5s;
+                        transform: 0.5s;
                     }
 
-                    button:nth-child(1):hover {
+                    a:hover:nth-child(2n) {
                         background-color: $bg-a-blue-hover;
                     }
 
-                    button:not(:nth-child(1)):hover {
+                    a:not(:nth-child(2)):hover {
                         background-color: $text-gray;
                         color: $bg-white;
                     }
+
                 }
 
                 &__top:hover {
                     opacity: 80%;
+                    transition: 0.5s;
 
-                    button {
+                    a {
                         opacity: 1;
                         transition: 0.5s;
                     }
                 }
 
-                &__buttom {
-                    width: $vp-full;
-                    height: $hg-25;
-                    flex-direction: $flex-direction;
-                    @include d-flex(flex, center, flex-start);
+                &__bottom {
+                    @include space-card-monile(100%, 20%);
+                    @include flex-column(flex, column, center, flex-start);
                 }
             }
 
-            &__services2 {
-                width: 100%;
-                height: 62vh;
-                margin: auto;
-                flex-direction: $flex-direction;
-                @include d-flex(flex, center, flex-start);
+            &__service2:hover {
+                box-shadow: 0px 0px 20px 5px rgba(96, 96, 96, 80%);
+            }
+
+            &__service3 {
+                @include flex-column(flex, column, flex-start, none);
+                @include space-card-monile(100%, 25%);
 
                 &__top {
-                    width: $vp-full;
-                    height: $hg-80;
-                    flex-direction: $flex-direction;
-                    background-image: url(../images/gravity/gravity-bg.jpeg);
-                    @include bg-set(no-repeat, cover, center);
-                    @include d-flex(flex, space-evenly, center);
-                    @include image-card(98%, auto, 75%, 0px, 0px 0px 10px 5px rgba(141, 141, 141, 0.3));
+                    position: $position-relative;
+                    @include space-card-monile(100%, 80%);
 
                     &--blue {
-                        @include a(none, white, 12px 24px, #4c89f2, 20px);
+                        @include position-botton(absolute, 20%, 50%, none, 3);
+                        @include a(none, white, 8px 20px, #4c89f2, 20px);
                     }
 
-                    &--white {
-                        @include a(none, rgb(255, 254, 254), 12px 24px, rgb(169, 169, 169), 20px);
+                    &--white1 {
+                        @include position-botton(absolute, 45%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
                     }
 
-                    button {
+                    &--white2 {
+                        @include position-botton(absolute, 70%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
+                    }
+
+                    img {
+                        @include space-card-monile(100%, 100%);
+                    }
+
+                    a {
                         opacity: 0;
-                        transition: 0.5s;
+                        transform: 0.5s;
                     }
 
-                    button:nth-child(1):hover {
+                    a:hover:nth-child(2n) {
                         background-color: $bg-a-blue-hover;
                     }
 
-                    button:not(:nth-child(1)):hover {
+                    a:not(:nth-child(2)):hover {
                         background-color: $text-gray;
                         color: $bg-white;
                     }
@@ -549,55 +252,61 @@
 
                 &__top:hover {
                     opacity: 80%;
+                    transition: 0.5s;
 
-                    button {
+                    a {
                         opacity: 1;
                         transition: 0.5s;
                     }
                 }
 
-                &__buttom {
-                    width: $vp-full;
-                    height: $hg-25;
-                    flex-direction: $flex-direction;
-                    @include d-flex(flex, center, flex-start);
+                &__bottom {
+                    @include space-card-monile(100%, 20%);
+                    @include flex-column(flex, column, center, flex-start);
                 }
             }
 
-            &__services3 {
-                width: 100%;
-                height: 62vh;
-                margin: auto;
-                flex-direction: $flex-direction;
-                @include d-flex(flex, center, flex-start);
+            &__service3:hover {
+                box-shadow: 0px 0px 20px 5px rgba(96, 96, 96, 80%);
+            }
+
+            &__service4 {
+                @include flex-column(flex, column, flex-start, none);
+                @include space-card-monile(100%, 25%);
 
                 &__top {
-                    width: $vp-full;
-                    height: $hg-80;
-                    flex-direction: $flex-direction;
-                    background-image: url(../images/balou/balou.webp);
-                    @include bg-set(no-repeat, cover, center);
-                    @include d-flex(flex, space-evenly, center);
-                    @include image-card(98%, auto, 75%, 0px, 0px 0px 10px 5px rgba(141, 141, 141, 0.3));
+                    position: $position-relative;
+                    @include space-card-monile(100%, 80%);
 
                     &--blue {
-                        @include a(none, white, 12px 24px, #4c89f2, 20px);
+                        @include position-botton(absolute, 20%, 50%, none, 3);
+                        @include a(none, white, 8px 20px, #4c89f2, 20px);
                     }
 
-                    &--white {
-                        @include a(none, rgb(255, 254, 254), 12px 24px, rgb(169, 169, 169), 20px);
+                    &--white1 {
+                        @include position-botton(absolute, 45%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
                     }
 
-                    button {
+                    &--white2 {
+                        @include position-botton(absolute, 70%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
+                    }
+
+                    img {
+                        @include space-card-monile(100%, 100%);
+                    }
+
+                    a {
                         opacity: 0;
-                        transition: 0.5s;
+                        transform: 0.5s;
                     }
 
-                    button:nth-child(1):hover {
+                    a:hover:nth-child(2n) {
                         background-color: $bg-a-blue-hover;
                     }
 
-                    button:not(:nth-child(1)):hover {
+                    a:not(:nth-child(2)):hover {
                         background-color: $text-gray;
                         color: $bg-white;
                     }
@@ -605,118 +314,68 @@
 
                 &__top:hover {
                     opacity: 80%;
+                    transition: 0.5s;
 
-                    button {
+                    a {
                         opacity: 1;
                         transition: 0.5s;
                     }
                 }
 
-                &__buttom {
-                    width: $vp-full;
-                    height: $hg-25;
-                    flex-direction: $flex-direction;
-                    @include d-flex(flex, center, flex-start);
+                &__bottom {
+                    @include space-card-monile(100%, 20%);
+                    @include flex-column(flex, column, center, flex-start);
                 }
+            }
+
+            &__service4:hover {
+                box-shadow: 0px 0px 20px 5px rgba(96, 96, 96, 80%);
             }
         }
 
-        &__explanation1 {
+        &__right-card {
+            flex-wrap: wrap;
             flex: 1;
-            height: 100%;
-            background-color: red;
+            @include space-card-monile(100%, 100%);
+            // @include flex-column(flex, column, flex-start, flex-start);
 
-            &__services {
-                width: 100%;
-                height: 62vh;
-                margin: auto;
-                flex-direction: $flex-direction;
-                @include d-flex(flex, center, flex-start);
+            &__service1 {
+                @include flex-column(flex, column, flex-start, none);
+                @include space-card-monile(100%, 25%);
 
                 &__top {
-                    width: $vp-full;
-                    height: $hg-80;
-                    flex-direction: $flex-direction;
-                    background-image: url(../images/maki/maki-bg.jpeg);
-                    @include bg-set(no-repeat, cover, center);
-                    @include d-flex(flex, space-evenly, center);
-                    @include image-card(98%, auto, 75%, 0px, 0px 0px 10px 5px rgba(141, 141, 141, 0.3));
+                    position: $position-relative;
+                    @include space-card-monile(100%, 80%);
 
                     &--blue {
-                        @include a(none, white, 12px 24px, #4c89f2, 20px);
+                        @include position-botton(absolute, 20%, 50%, none, 3);
+                        @include a(none, white, 8px 20px, #4c89f2, 20px);
                     }
 
-                    &--white {
-                        @include a(none, rgb(255, 254, 254), 12px 24px, rgb(169, 169, 169), 20px);
+                    &--white1 {
+                        @include position-botton(absolute, 45%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
                     }
 
-                    button {
+                    &--white2 {
+                        @include position-botton(absolute, 70%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
+                    }
+
+                    img {
+                        @include space-card-monile(100%, 100%);
+                    }
+
+                    a {
                         opacity: 0;
-                        transition: 0.5s;
+                        transform: 0.5s;
                     }
 
-                    button:nth-child(1):hover {
+                    a:hover:nth-child(2n) {
                         background-color: $bg-a-blue-hover;
                     }
 
-                    button:not(:nth-child(1)):hover {
-                        background-color: $text-gray;
-                        color: $bg-white;
-                    }
-
-                }
-
-                &__top:hover {
-                    opacity: 80%;
-
-                    button {
-                        opacity: 1;
-                        transition: 0.5s;
-                    }
-                }
-
-                &__buttom {
-                    width: $vp-full;
-                    height: $hg-25;
-                    flex-direction: $flex-direction;
-                    @include d-flex(flex, center, flex-start);
-                }
-            }
-
-            &__services1 {
-                width: 100%;
-                height: 62vh;
-                margin: auto;
-                flex-direction: $flex-direction;
-                @include d-flex(flex, center, flex-start);
-
-                &__top {
-                    width: $vp-full;
-                    height: $hg-80;
-                    flex-direction: $flex-direction;
-                    background-image: url(../images/yoko/yoko\ bg.webp);
-                    @include bg-set(no-repeat, cover, center);
-                    @include d-flex(flex, space-evenly, center);
-                    @include image-card(98%, auto, 75%, 0px, 0px 0px 10px 5px rgba(141, 141, 141, 0.3));
-
-                    &--blue {
-                        @include a(none, white, 12px 24px, #4c89f2, 20px);
-                    }
-
-                    &--white {
-                        @include a(none, rgb(255, 254, 254), 12px 24px, rgb(169, 169, 169), 20px);
-                    }
-
-                    button {
-                        opacity: 0;
-                        transition: 0.5s;
-                    }
-
-                    button:nth-child(1):hover {
-                        background-color: $bg-a-blue-hover;
-                    }
-
-                    button:not(:nth-child(1)):hover {
+                    a:not(:nth-child(2)):hover {
                         background-color: $text-gray;
                         color: $bg-white;
                     }
@@ -724,55 +383,61 @@
 
                 &__top:hover {
                     opacity: 80%;
+                    transition: 0.5s;
 
-                    button {
+                    a {
                         opacity: 1;
                         transition: 0.5s;
                     }
                 }
 
-                &__buttom {
-                    width: $vp-full;
-                    height: $hg-25;
-                    flex-direction: $flex-direction;
-                    @include d-flex(flex, center, flex-start);
+                &__bottom {
+                    @include space-card-monile(100%, 20%);
+                    @include flex-column(flex, column, center, flex-start);
                 }
             }
 
-            &__services2 {
-                width: 100%;
-                height: 62vh;
-                margin: auto;
-                flex-direction: $flex-direction;
-                @include d-flex(flex, center, flex-start);
+            &__service1:hover {
+                box-shadow: 0px 0px 20px 5px rgba(96, 96, 96, 80%);
+            }
+
+            &__service2 {
+                @include flex-column(flex, column, flex-start, none);
+                @include space-card-monile(100%, 25%);
 
                 &__top {
-                    width: $vp-full;
-                    height: $hg-80;
-                    flex-direction: $flex-direction;
-                    background-image: url(../images/kitchen-daily/kitchen-daily.webp);
-                    @include bg-set(no-repeat, cover, center);
-                    @include d-flex(flex, space-evenly, center);
-                    @include image-card(98%, auto, 75%, 0px, 0px 0px 10px 5px rgba(141, 141, 141, 0.3));
+                    position: $position-relative;
+                    @include space-card-monile(100%, 80%);
 
                     &--blue {
-                        @include a(none, white, 12px 24px, #4c89f2, 20px);
+                        @include position-botton(absolute, 20%, 50%, none, 3);
+                        @include a(none, white, 8px 20px, #4c89f2, 20px);
                     }
 
-                    &--white {
-                        @include a(none, rgb(255, 254, 254), 12px 24px, rgb(169, 169, 169), 20px);
+                    &--white1 {
+                        @include position-botton(absolute, 45%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
                     }
 
-                    button {
+                    &--white2 {
+                        @include position-botton(absolute, 70%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
+                    }
+
+                    img {
+                        @include space-card-monile(100%, 100%);
+                    }
+
+                    a {
                         opacity: 0;
-                        transition: 0.5s;
+                        transform: 0.5s;
                     }
 
-                    button:nth-child(1):hover {
+                    a:hover:nth-child(2n) {
                         background-color: $bg-a-blue-hover;
                     }
 
-                    button:not(:nth-child(1)):hover {
+                    a:not(:nth-child(2)):hover {
                         background-color: $text-gray;
                         color: $bg-white;
                     }
@@ -780,55 +445,61 @@
 
                 &__top:hover {
                     opacity: 80%;
+                    transition: 0.5s;
 
-                    button {
+                    a {
                         opacity: 1;
                         transition: 0.5s;
                     }
                 }
 
-                &__buttom {
-                    width: $vp-full;
-                    height: $hg-25;
-                    flex-direction: $flex-direction;
-                    @include d-flex(flex, center, flex-start);
+                &__bottom {
+                    @include space-card-monile(100%, 20%);
+                    @include flex-column(flex, column, center, flex-start);
                 }
             }
 
-            &__services3 {
-                width: 100%;
-                height: 62vh;
-                margin: auto;
-                flex-direction: $flex-direction;
-                @include d-flex(flex, center, flex-start);
+            &__service2:hover {
+                box-shadow: 0px 0px 20px 5px rgba(96, 96, 96, 80%);
+            }
+
+            &__service3 {
+                @include flex-column(flex, column, flex-start, none);
+                @include space-card-monile(100%, 25%);
 
                 &__top {
-                    width: $vp-full;
-                    height: $hg-80;
-                    flex-direction: $flex-direction;
-                    background-image: url(../images/framerate/preview-f020a8bc.webp);
-                    @include bg-set(no-repeat, cover, center);
-                    @include d-flex(flex, space-evenly, center);
-                    @include image-card(98%, auto, 75%, 0px, 0px 0px 10px 5px rgba(141, 141, 141, 0.3));
+                    position: $position-relative;
+                    @include space-card-monile(100%, 80%);
 
                     &--blue {
-                        @include a(none, white, 12px 24px, #4c89f2, 20px);
+                        @include position-botton(absolute, 20%, 50%, none, 3);
+                        @include a(none, white, 8px 20px, #4c89f2, 20px);
                     }
 
-                    &--white {
-                        @include a(none, rgb(255, 254, 254), 12px 24px, rgb(169, 169, 169), 20px);
+                    &--white1 {
+                        @include position-botton(absolute, 45%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
                     }
 
-                    button {
+                    &--white2 {
+                        @include position-botton(absolute, 70%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
+                    }
+
+                    img {
+                        @include space-card-monile(100%, 100%);
+                    }
+
+                    a {
                         opacity: 0;
-                        transition: 0.5s;
+                        transform: 0.5s;
                     }
 
-                    button:nth-child(1):hover {
+                    a:hover:nth-child(2n) {
                         background-color: $bg-a-blue-hover;
                     }
 
-                    button:not(:nth-child(1)):hover {
+                    a:not(:nth-child(2)):hover {
                         background-color: $text-gray;
                         color: $bg-white;
                     }
@@ -836,34 +507,85 @@
 
                 &__top:hover {
                     opacity: 80%;
+                    transition: 0.5s;
 
-                    button {
+                    a {
                         opacity: 1;
                         transition: 0.5s;
                     }
                 }
 
-                &__buttom {
-                    width: $vp-full;
-                    height: $hg-25;
-                    flex-direction: $flex-direction;
-                    @include d-flex(flex, center, flex-start);
+                &__bottom {
+                    @include space-card-monile(100%, 20%);
+                    @include flex-column(flex, column, center, flex-start);
                 }
             }
-        }
 
-        .vp100 {
-            width: $vp-full;
-        }
+            &__service3:hover {
+                box-shadow: 0px 0px 20px 5px rgba(96, 96, 96, 80%);
+            }
 
-        .cn-big {
-            background-color: rgb(169, 169, 169);
-            width: 40px;
-            height: 40px;
-        }
+            &__service4 {
+                @include flex-column(flex, column, flex-start, none);
+                @include space-card-monile(100%, 25%);
 
-        .margin-top {
-            margin-top: 20px !important;
+                &__top {
+                    position: $position-relative;
+                    @include space-card-monile(100%, 80%);
+
+                    &--blue {
+                        @include position-botton(absolute, 20%, 50%, none, 3);
+                        @include a(none, white, 8px 20px, #4c89f2, 20px);
+                    }
+
+                    &--white1 {
+                        @include position-botton(absolute, 45%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
+                    }
+
+                    &--white2 {
+                        @include position-botton(absolute, 70%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
+                    }
+
+                    img {
+                        @include space-card-monile(100%, 100%);
+                    }
+
+                    a {
+                        opacity: 0;
+                        transform: 0.5s;
+                    }
+
+                    a:hover:nth-child(2n) {
+                        background-color: $bg-a-blue-hover;
+                    }
+
+                    a:not(:nth-child(2)):hover {
+                        background-color: $text-gray;
+                        color: $bg-white;
+                    }
+                }
+
+                &__top:hover {
+                    opacity: 80%;
+                    transition: 0.5s;
+
+                    a {
+                        opacity: 1;
+                        transition: 0.5s;
+                    }
+                }
+
+                &__bottom {
+                    @include space-card-monile(100%, 20%);
+                    @include flex-column(flex, column, center, flex-start);
+                }
+            }
+
+            &__service4:hover {
+                box-shadow: 0px 0px 20px 5px rgba(96, 96, 96, 80%);
+            }
         }
 
         #font-size {
@@ -875,302 +597,325 @@
 
 
 
+@media screen and (max-width: 913px) {
+    .hide {
+        width: $hg-98;
+        height: $hg-200vh;
+        margin: auto;
+        flex-wrap: wrap;
+        @include flex-column(flex, column, flex-start, flex-start);
+
+        &__introdution {
+            display: none;
+        }
+
+        &__center-card {
+            flex-wrap: wrap;
+            @include space-card-monile(100%, 100%);
+            @include flex-column(flex, column, flex-start, none);
+
+            &__service1 {
+                @include flex-column(flex, column, flex-start, none);
+                @include space-card-monile(100%, 25%);
+
+                &__top {
+                    position: $position-relative;
+                    @include space-card-monile(100%, 80%);
+
+                    &--blue {
+                        @include position-botton(absolute, 20%, 50%, none, 3);
+                        @include a(none, white, 8px 20px, #4c89f2, 20px);
+                    }
+
+                    &--white1 {
+                        @include position-botton(absolute, 45%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
+                    }
+
+                    &--white2 {
+                        @include position-botton(absolute, 70%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
+                    }
+
+                    img {
+                        @include space-card-monile(100%, 100%);
+                    }
+                }
+
+                &__bottom {
+                    @include space-card-monile(100%, 20%);
+                    @include flex-column(flex, column, center, flex-start);
+                }
+            }
+
+            &__service2 {
+                @include flex-column(flex, column, flex-start, none);
+                @include space-card-monile(100%, 25%);
+
+                &__top {
+                    position: $position-relative;
+                    @include space-card-monile(100%, 80%);
+
+                    &--blue {
+                        @include position-botton(absolute, 20%, 50%, none, 3);
+                        @include a(none, white, 8px 20px, #4c89f2, 20px);
+                    }
+
+                    &--white1 {
+                        @include position-botton(absolute, 45%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
+                    }
+
+                    &--white2 {
+                        @include position-botton(absolute, 70%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
+                    }
+
+                    img {
+                        @include space-card-monile(100%, 100%);
+                    }
+                }
+
+                &__bottom {
+                    @include space-card-monile(100%, 20%);
+                    @include flex-column(flex, column, center, flex-start);
+                }
+            }
+
+            &__service3 {
+                @include flex-column(flex, column, flex-start, none);
+                @include space-card-monile(100%, 25%);
+
+                &__top {
+                    position: $position-relative;
+                    @include space-card-monile(100%, 80%);
+
+                    &--blue {
+                        @include position-botton(absolute, 20%, 50%, none, 3);
+                        @include a(none, white, 8px 20px, #4c89f2, 20px);
+                    }
+
+                    &--white1 {
+                        @include position-botton(absolute, 45%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
+                    }
+
+                    &--white2 {
+                        @include position-botton(absolute, 70%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
+                    }
+
+                    img {
+                        @include space-card-monile(100%, 100%);
+                    }
+                }
+
+                &__bottom {
+                    @include space-card-monile(100%, 20%);
+                    @include flex-column(flex, column, center, flex-start);
+                }
+            }
+
+            &__service4 {
+                @include flex-column(flex, column, flex-start, none);
+                @include space-card-monile(100%, 25%);
+
+                &__top {
+                    position: $position-relative;
+                    @include space-card-monile(100%, 80%);
+
+                    &--blue {
+                        @include position-botton(absolute, 20%, 50%, none, 3);
+                        @include a(none, white, 8px 20px, #4c89f2, 20px);
+                    }
+
+                    &--white1 {
+                        @include position-botton(absolute, 45%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
+                    }
+
+                    &--white2 {
+                        @include position-botton(absolute, 70%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
+                    }
+
+                    img {
+                        @include space-card-monile(100%, 100%);
+                    }
+                }
+
+                &__bottom {
+                    @include space-card-monile(100%, 20%);
+                    @include flex-column(flex, column, center, flex-start);
+                }
+            }
+        }
+
+        &__right-card {
+            display: none;
+        }
+    }
+}
+
+
 
 
 
 
 @media screen and (max-width: 480px) {
     .hide {
-        display: $display-flex;
-        flex-direction: $flex-direction;
-        width: $hg-98;
-        height: 1600px;
+        padding: 0 1%;
+        @include flex-column(flex, column, flex-start, flex-start);
+        @include space-card-monile(98%, 150vh);
 
         &__introdution {
             display: none;
         }
 
-        &__explanation {
-            width: $vp-full;
-            height: 400px;
-            background-color: #4c89f2;
-            flex-direction: $flex-direction;
-            @include padding(2%, 2%);
-            @include d-flex(flex, center, flex-start);
+        &__center-card {
+            flex-wrap: wrap;
+            @include space-card-monile(100%, 100%);
+            @include flex-column(flex, column, flex-start, none);
 
-            &__services {
-                width: $vp-full;
-                height: 400px;
-                flex-direction: $flex-direction;
-                @include d-flex(flex, center, flex-start);
+            &__service1 {
+                @include flex-column(flex, column, flex-start, none);
+                @include space-card-monile(100%, 25%);
 
                 &__top {
-                    width: $vp-full;
-                    height: 75%;
-                    flex-direction: $flex-direction;
-                    background-image: url(../images/juno/preview-88c7d92d.webp);
-                    @include bg-set(no-repeat, cover, center);
-                    @include d-flex(flex, space-evenly, center);
-                    @include image-card(98%, auto, 75%, 0px, 0px 0px 10px 5px rgba(141, 141, 141, 0.3));
+                    position: $position-relative;
+                    @include space-card-monile(100%, 80%);
 
                     &--blue {
+                        @include position-botton(absolute, 20%, 50%, none, 3);
                         @include a(none, white, 8px 20px, #4c89f2, 20px);
                     }
 
-                    &--white {
-                        @include a(none, rgb(255, 254, 254), 8px 20px, rgb(169, 169, 169), 20px);
+                    &--white1 {
+                        @include position-botton(absolute, 45%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
+                    }
+
+                    &--white2 {
+                        @include position-botton(absolute, 70%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
+                    }
+
+                    img {
+                        @include space-card-monile(100%, 100%);
                     }
                 }
 
-                &__buttom {
-                    width: $vp-full;
-                    height: $hg-25;
-                    flex-direction: $flex-direction;
-                    @include d-flex(flex, center, flex-start);
+                &__bottom {
+                    @include space-card-monile(100%, 20%);
+                    @include flex-column(flex, column, center, flex-start);
                 }
             }
 
-            &__services1 {
-                width: $vp-full;
-                height: $hg-400px;
-                flex-direction: $flex-direction;
-                @include d-flex(flex, center, flex-start);
+            &__service2 {
+                @include flex-column(flex, column, flex-start, none);
+                @include space-card-monile(100%, 25%);
 
                 &__top {
-                    width: $vp-full;
-                    height: $hg-fullheight;
-                    flex-direction: $flex-direction;
-                    background-image: url(../images/trek/trek\ bg.webp);
-                    @include bg-set(no-repeat, cover, center);
-                    @include d-flex(flex, space-evenly, center);
-                    @include image-card(98%, auto, 75%, 0px, 0px 0px 10px 5px rgba(141, 141, 141, 0.3));
+                    position: $position-relative;
+                    @include space-card-monile(100%, 80%);
 
                     &--blue {
+                        @include position-botton(absolute, 20%, 50%, none, 3);
                         @include a(none, white, 8px 20px, #4c89f2, 20px);
                     }
 
-                    &--white {
-                        @include a(none, rgb(255, 254, 254), 8px 20px, rgb(169, 169, 169), 20px);
+                    &--white1 {
+                        @include position-botton(absolute, 45%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
+                    }
+
+                    &--white2 {
+                        @include position-botton(absolute, 70%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
+                    }
+
+                    img {
+                        @include space-card-monile(100%, 100%);
                     }
                 }
 
-                &__buttom {
-                    width: $vp-full;
-                    height: $hg-25;
-                    flex-direction: $flex-direction;
-                    @include d-flex(flex, center, flex-start);
+                &__bottom {
+                    @include space-card-monile(100%, 20%);
+                    @include flex-column(flex, column, center, flex-start);
                 }
             }
 
-            &__services2 {
-                width: $vp-full;
-                height: $hg-400px;
-                flex-direction: $flex-direction;
-                @include d-flex(flex, center, flex-start);
+            &__service3 {
+                @include flex-column(flex, column, flex-start, none);
+                @include space-card-monile(100%, 25%);
 
                 &__top {
-                    width: $vp-full;
-                    height: $hg-fullheight;
-                    flex-direction: $flex-direction;
-                    background-image: url(../images/gravity/gravity-bg.jpeg);
-                    @include bg-set(no-repeat, cover, center);
-                    @include d-flex(flex, space-evenly, center);
-                    @include image-card(98%, auto, 75%, 0px, 0px 0px 10px 5px rgba(141, 141, 141, 0.3));
+                    position: $position-relative;
+                    @include space-card-monile(100%, 80%);
 
                     &--blue {
+                        @include position-botton(absolute, 20%, 50%, none, 3);
                         @include a(none, white, 8px 20px, #4c89f2, 20px);
                     }
 
-                    &--white {
-                        @include a(none, rgb(255, 254, 254), 8px 20px, rgb(169, 169, 169), 20px);
+                    &--white1 {
+                        @include position-botton(absolute, 45%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
+                    }
+
+                    &--white2 {
+                        @include position-botton(absolute, 70%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
+                    }
+
+                    img {
+                        @include space-card-monile(100%, 100%);
                     }
                 }
 
-                &__buttom {
-                    width: $vp-full;
-                    height: $hg-25;
-                    flex-direction: $flex-direction;
-                    @include d-flex(flex, center, flex-start);
+                &__bottom {
+                    @include space-card-monile(100%, 20%);
+                    @include flex-column(flex, column, center, flex-start);
                 }
             }
 
-            &__services3 {
-                width: $vp-full;
-                height: $hg-400px;
-                flex-direction: $flex-direction;
-                @include d-flex(flex, center, flex-start);
+            &__service4 {
+                @include flex-column(flex, column, flex-start, none);
+                @include space-card-monile(100%, 25%);
 
                 &__top {
-                    width: $vp-full;
-                    height: $hg-fullheight;
-                    flex-direction: $flex-direction;
-                    background-image: url(../images/balou/balou.webp);
-                    @include bg-set(no-repeat, cover, center);
-                    @include d-flex(flex, space-evenly, center);
-                    @include image-card(98%, auto, 75%, 0px, 0px 0px 10px 5px rgba(141, 141, 141, 0.3));
+                    position: $position-relative;
+                    @include space-card-monile(100%, 80%);
 
                     &--blue {
+                        @include position-botton(absolute, 20%, 50%, none, 3);
                         @include a(none, white, 8px 20px, #4c89f2, 20px);
                     }
 
-                    &--white {
-                        @include a(none, rgb(255, 254, 254), 8px 20px, rgb(169, 169, 169), 20px);
+                    &--white1 {
+                        @include position-botton(absolute, 45%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
+                    }
+
+                    &--white2 {
+                        @include position-botton(absolute, 70%, 50%, none, 3);
+                        @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
+                    }
+
+                    img {
+                        @include space-card-monile(100%, 100%);
                     }
                 }
 
-                &__buttom {
-                    width: $vp-full;
-                    height: $hg-25;
-                    flex-direction: $flex-direction;
-                    @include d-flex(flex, center, flex-start);
-                }
-            }
-        }
-
-        &__explanation1 {
-            width: $vp-full;
-            height: $hg-400px;
-            flex-direction: $flex-direction;
-            @include padding(2%, 2%);
-            @include d-flex(flex, center, flex-start);
-
-            &__services {
-                width: $vp-full;
-                height: $hg-400px;
-                flex-direction: $flex-direction;
-                @include d-flex(flex, center, flex-start);
-
-                &__top {
-                    width: $vp-full;
-                    height: $hg-fullheight;
-                    flex-direction: $flex-direction;
-                    background-image: url(../images/maki/maki-bg.jpeg);
-                    @include bg-set(no-repeat, cover, center);
-                    @include d-flex(flex, space-evenly, center);
-                    @include image-card(98%, auto, 75%, 0px, 0px 0px 10px 5px rgba(141, 141, 141, 0.3));
-
-                    &--blue {
-                        @include a(none, white, 8px 20px, #4c89f2, 20px);
-                    }
-
-                    &--white {
-                        @include a(none, rgb(255, 254, 254), 8px 20px, rgb(169, 169, 169), 20px);
-                    }
-                }
-
-                &__buttom {
-                    width: $vp-full;
-                    height: $hg-25;
-                    flex-direction: $flex-direction;
-                    @include d-flex(flex, center, flex-start);
-                }
-            }
-
-
-
-            &__services1 {
-                width: $vp-full;
-                height: $hg-400px;
-                flex-direction: $flex-direction;
-                @include d-flex(flex, center, flex-start);
-
-                &__top {
-                    width: $vp-full;
-                    height: $hg-fullheight;
-                    flex-direction: $flex-direction;
-                    background-image: url(../images/yoko/yoko\ bg.webp);
-                    @include bg-set(no-repeat, cover, center);
-                    @include d-flex(flex, space-evenly, center);
-                    @include image-card(98%, auto, 75%, 0px, 0px 0px 10px 5px rgba(141, 141, 141, 0.3));
-
-                    &--blue {
-                        @include a(none, white, 8px 20px, #4c89f2, 20px);
-                    }
-
-                    &--white {
-                        @include a(none, rgb(255, 254, 254), 8px 20px, rgb(169, 169, 169), 20px);
-                    }
-                }
-
-                &__buttom {
-                    width: $vp-full;
-                    height: $hg-25;
-                    flex-direction: $flex-direction;
-                    @include d-flex(flex, center, flex-start);
-                }
-            }
-
-            &__services2 {
-                width: $vp-full;
-                height: $hg-400px;
-                flex-direction: $flex-direction;
-                @include d-flex(flex, center, flex-start);
-
-                &__top {
-                    width: $vp-full;
-                    height: $hg-fullheight;
-                    flex-direction: $flex-direction;
-                    background-image: url(../images/kitchen-daily/kitchen-daily.webp);
-                    @include bg-set(no-repeat, cover, center);
-                    @include d-flex(flex, space-evenly, center);
-                    @include image-card(98%, auto, 75%, 0px, 0px 0px 10px 5px rgba(141, 141, 141, 0.3));
-
-                    &--blue {
-                        @include a(none, white, 8px 20px, #4c89f2, 20px);
-                    }
-
-                    &--white {
-                        @include a(none, rgb(255, 254, 254), 8px 20px, rgb(169, 169, 169), 20px);
-                    }
-                }
-
-                &__buttom {
-                    width: $vp-full;
-                    height: $hg-25;
-                    flex-direction: $flex-direction;
-                    @include d-flex(flex, center, flex-start);
-                }
-            }
-
-            &__services3 {
-                width: $vp-full;
-                height: $hg-400px;
-                flex-direction: $flex-direction;
-                @include d-flex(flex, center, flex-start);
-
-                &__top {
-                    width: $vp-full;
-                    height: $hg-fullheight;
-                    flex-direction: $flex-direction;
-                    background-image: url(../images/framerate/preview-f020a8bc.webp);
-                    @include bg-set(no-repeat, cover, center);
-                    @include d-flex(flex, space-evenly, center);
-                    @include image-card(98%, auto, 75%, 0px, 0px 0px 10px 5px rgba(141, 141, 141, 0.3));
-
-                    &--blue {
-                        @include a(none, white, 8px 20px, #4c89f2, 20px);
-                    }
-
-                    &--white {
-                        @include a(none, rgb(255, 254, 254), 8px 20px, rgb(169, 169, 169), 20px);
-                    }
-                }
-
-                &__buttom {
-                    width: $vp-full;
-                    height: $hg-25;
-                    flex-direction: $flex-direction;
-                    @include d-flex(flex, center, flex-start);
+                &__bottom {
+                    @include space-card-monile(100%, 20%);
+                    @include flex-column(flex, column, center, flex-start);
                 }
             }
         }
 
-        .vp100 {
-            width: $vp-full;
-        }
-
-        .cn-small {
-            background-color: rgb(169, 169, 169);
+        &__right-card {
+            display: none;
         }
     }
 }

@@ -67,3 +67,25 @@
     justify-content: $justify-content;
     align-items: $align-items;
 }
+
+@mixin space-card-monile($hg-98, $hg-50) {
+    width: $hg-98;
+    height: $hg-50;
+}
+
+@mixin position-botton($position, $top, $left, $right, $z-index) {
+    position: $position;
+    top: $top;
+    left: $left;
+    right: $right;
+    transform: translate(-50%, 50%);
+    z-index: $z-index;
+}
+
+@mixin advertising($margin,$width,$height,$border-radius) {
+    margin: $margin;
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+    outline: 2px solid white;
+}

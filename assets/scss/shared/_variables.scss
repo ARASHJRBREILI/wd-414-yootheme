@@ -1,5 +1,6 @@
 $full-width: 100%;
 $vp-full: 100%;
+$vp-98: 98%;
 $vp-94: 94%;
 $vp-90: 90%;
 $vp-70: 70%;
@@ -10,12 +11,14 @@ $vp-23: 23%;
 $vp-20: 20%;
 $vp-15: 15%;
 
-$hg-1200px: 1200px;
-$hg-800px: 800px;
-$hg-600px: 600px;
-$hg-400px: 400px;
+
+$v-40px: 40px;
+
+
+
 $vp-120px: 120px;
 
+$hg-400vh: 400vh;
 $hg-200vh: 200vh;
 $hg-70vh: 70vh;
 $hg-50vh: 50vh;
@@ -88,3 +91,4 @@ $flex-direction: column;
 $flex-direction-row: row;
 
 $display-flex: flex;
+$flex-wrap: wrap;
