@@ -10,12 +10,15 @@ footer {
 
         .picture {
             height: 100%;
+            flex: 1;
+
             @include flex-column(flex, row, flex-start, flex-start);
         }
 
         .footer-product {
             padding: 5px;
             height: 100%;
+            flex: 1;
             flex-wrap: $flex-wrap;
             @include flex-column(flex, column, flex-start, flex-start);
 
@@ -50,6 +53,7 @@ footer {
             padding: 5px;
             flex-wrap: $flex-wrap;
             height: 100%;
+            flex: 1;
             @include flex-column(flex, column, flex-start, flex-start);
 
             a {
@@ -83,6 +87,7 @@ footer {
             padding: 5px;
             flex-wrap: $flex-wrap;
             height: 100%;
+            flex: 1;
             @include flex-column(flex, column, flex-start, flex-start);
 
             a {
@@ -116,6 +121,7 @@ footer {
             padding: 5px;
             flex-wrap: $flex-wrap;
             height: 100%;
+            flex: 1;
             @include flex-column(flex, column, flex-start, flex-start);
 
             a {
@@ -150,12 +156,14 @@ footer {
     @media screen and (max-width: 913px) {
         .picture {
             height: 100%;
+            flex: 1;
             @include flex-column(flex, column, flex-start, flex-start);
         }
 
         .footer-product {
             padding: 5px;
             height: 100%;
+            flex: 1;
             flex-wrap: $flex-wrap;
             @include flex-column(flex, column, flex-start, flex-start);
         }
@@ -164,6 +172,8 @@ footer {
             padding: 5px;
             height: 100%;
             flex-wrap: $flex-wrap;
+            flex: 1;
+
             @include flex-column(flex, column, flex-start, flex-start);
         }
 
@@ -171,6 +181,8 @@ footer {
             padding: 5px;
             height: 100%;
             flex-wrap: $flex-wrap;
+            flex: 1;
+
             @include flex-column(flex, column, flex-start, flex-start);
         }
 
@@ -178,6 +190,8 @@ footer {
             padding: 5px;
             height: 100%;
             flex-wrap: $flex-wrap;
+            flex: 1;
+
             @include flex-column(flex, column, flex-start, flex-start);
         }
     }
@@ -187,24 +201,28 @@ footer {
         .footer-product {
             padding: 5px;
             flex-wrap: $flex-wrap;
+            flex: 1;
             @include flex-column(flex, column, flex-start, flex-start);
         }
 
         .footer-company {
             padding: 5px;
             flex-wrap: $flex-wrap;
+            flex: 1;
             @include flex-column(flex, column, flex-start, flex-start);
         }
 
         .footer-help {
             padding: 5px;
             flex-wrap: $flex-wrap;
+            flex: 1;
             @include flex-column(flex, column, flex-start, flex-start);
         }
 
         .footer-documentation {
             padding: 5px;
             flex-wrap: $flex-wrap;
+            flex: 1;
             @include flex-column(none, column, flex-start, flex-start);
         }
     }
