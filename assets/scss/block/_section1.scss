@@ -1,13 +1,11 @@
 @media screen and (max-width: 913px) {
     .bg-yootheme {
         position: $position-relative;
-        // padding: $hg-header-9vh 0;
         @include d-flex(flex, center, center);
 
         &__background {
             width: $vp-full;
             height: $hg-50vh;
-
 
             img {
                 width: $full-width;
@@ -15,13 +13,14 @@
             }
         }
 
-
         &__discription {
             position: $position-absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, 50%);
             width: $vp-70;
             text-align: $text-align-center;
             line-height: $line-height-1-7;
-
 
             a:nth-child(2n+1) {
                 display: $display-inline-block;
@@ -29,11 +28,9 @@
                 @include a(none, white, 8px 20px, #4c89f2, 20px);
             }
 
-
             a:nth-child(2n+1):hover {
                 color: $text-hover-black;
             }
-
 
             a:nth-child(2n) {
                 display: $display-inline-block;
@@ -90,7 +87,7 @@
 
             a:nth-child(2n):hover {
                 background-color: $text-gray;
-                color: $bg-white;   
+                color: $bg-white;
             }
         }
     }

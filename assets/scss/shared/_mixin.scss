@@ -89,3 +89,24 @@
     border-radius: $border-radius;
     outline: 2px solid white;
 }
+
+@mixin text($vp-350px,$hg-500px,$flex-wrap,$padding-20px){
+    width: $vp-350px;
+    height: $hg-500px;
+    box-shadow: 0px 0px 10px 10px rgba(150, 150, 150, 0.5);
+    flex-wrap: $flex-wrap;
+    padding: $padding-20px;
+}
+
+@mixin input($width,$flex-wrap,$height,$margin,$border,$border-radius){
+    width: $width;
+    flex-wrap: $flex-wrap;
+    height: $height;
+    margin: $margin;
+    border: $border;
+    border-radius: $border-radius;
+}
+@mixin input-hover($border,$box-shadow){
+    border: $border;
+    box-shadow: $box-shadow;
+}

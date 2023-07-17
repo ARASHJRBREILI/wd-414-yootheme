@@ -143,8 +143,8 @@
         .show {
             display: flex;
             z-index: 1000;
-            width: 25%;
-            backdrop-filter: blur(4px);
+            width: 38%;
+            background-color: rgba(130, 130, 130, 0.3);
         }
 
 
@@ -213,6 +213,7 @@
 
         .show {
             display: flex;
+            flex-wrap: wrap;
             z-index: 2;
             background-color: rgba(130, 130, 130, 0.3);
             width: 50%;

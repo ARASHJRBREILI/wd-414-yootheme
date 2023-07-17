@@ -1,87 +1,211 @@
 footer {
-    width: 100%;
-    height: 525px;
-    // background-color: aqua;
-    padding: 0 1%;
+    flex: 1;
+    padding: 0 10px;
+    height: 19rem;
+    line-height: $line-height-1-7;
+    flex-wrap: $flex-wrap;
+    @include flex-column(flex, row, space-between, center);
+
+    @media screen and (min-width: 913px) {
+
+        .picture {
+            height: 100%;
+            @include flex-column(flex, row, flex-start, flex-start);
+        }
+
+        .footer-product {
+            padding: 5px;
+            height: 100%;
+            flex-wrap: $flex-wrap;
+            @include flex-column(flex, column, flex-start, flex-start);
+
+            a {
+                position: $position-relative;
+                overflow: hidden;
+            }
+
+            a:hover {
+                color: $text-hover-black;
+            }
+
+            a::before {
+                content: "";
+                background-color: $bg-blue;
+                display: $display-inline-block;
+                width: $vp-full;
+                height: 2px;
+                position: $position-absolute;
+                top: 90%;
+                left: 0;
+                transform: rotateY(90deg);
+                transition: 0.5S;
+            }
+
+            a:hover::before {
+                transform: rotateX(0);
+            }
+        }
+
+        .footer-company {
+            padding: 5px;
+            flex-wrap: $flex-wrap;
+            height: 100%;
+            @include flex-column(flex, column, flex-start, flex-start);
+
+            a {
+                position: $position-relative;
+                overflow: hidden;
+            }
+
+            a:hover {
+                color: $text-hover-black;
+            }
+
+            a::before {
+                content: "";
+                background-color: $bg-blue;
+                display: $display-inline-block;
+                width: $vp-full;
+                height: 2px;
+                position: $position-absolute;
+                top: 90%;
+                left: 0;
+                transform: rotateY(90deg);
+                transition: 0.5S;
+            }
+
+            a:hover::before {
+                transform: rotateX(0);
+            }
+        }
+
+        .footer-help {
+            padding: 5px;
+            flex-wrap: $flex-wrap;
+            height: 100%;
+            @include flex-column(flex, column, flex-start, flex-start);
+
+            a {
+                position: $position-relative;
+                overflow: hidden;
+            }
+
+            a:hover {
+                color: $text-hover-black;
+            }
+
+            a::before {
+                content: "";
+                background-color: $bg-blue;
+                display: $display-inline-block;
+                width: $vp-full;
+                height: 2px;
+                position: $position-absolute;
+                top: 90%;
+                left: 0;
+                transform: rotateY(90deg);
+                transition: 0.5S;
+            }
+
+            a:hover::before {
+                transform: rotateX(0);
+            }
+        }
+
+        .footer-documentation {
+            padding: 5px;
+            flex-wrap: $flex-wrap;
+            height: 100%;
+            @include flex-column(flex, column, flex-start, flex-start);
+
+            a {
+                position: $position-relative;
+                overflow: hidden;
+            }
+
+            a:hover {
+                color: $text-hover-black;
+            }
+
+            a::before {
+                content: "";
+                background-color: $bg-blue;
+                display: $display-inline-block;
+                width: $vp-full;
+                height: 2px;
+                position: $position-absolute;
+                top: 90%;
+                left: 0;
+                transform: rotateY(90deg);
+                transition: 0.5S;
+            }
+
+            a:hover::before {
+                transform: rotateX(0);
+            }
+        }
+    }
 
 
     @media screen and (max-width: 913px) {
         .picture {
-            display: flex;
-            align-items: flex-start;
-            flex-direction: row;
-            justify-content: center;
+            height: 100%;
+            @include flex-column(flex, column, flex-start, flex-start);
         }
 
-        .article {
-            display: flex;
-            flex-direction: row;
-
-            &__text1 {
-                width: 100%;
-                flex-wrap: wrap;
-                display: flex;
-                flex-direction: column;
-                margin-top: 12px;
-                align-items: flex-start;
-                justify-content: space-between;
-                line-height: 25px;
-                padding: 0 20px;
-            }
-
-            &__text2 {
-                display: flex;
-                margin-top: 12px;
-                align-items: flex-start;
-                flex-direction: row;
-                justify-content: space-between;
-                line-height: 25px;
-                padding: 0 20px;
-            }
-
-            .text3 {
-                display: none;
-            }
+        .footer-product {
+            padding: 5px;
+            height: 100%;
+            flex-wrap: $flex-wrap;
+            @include flex-column(flex, column, flex-start, flex-start);
         }
 
+        .footer-company {
+            padding: 5px;
+            height: 100%;
+            flex-wrap: $flex-wrap;
+            @include flex-column(flex, column, flex-start, flex-start);
+        }
+
+        .footer-help {
+            padding: 5px;
+            height: 100%;
+            flex-wrap: $flex-wrap;
+            @include flex-column(flex, column, flex-start, flex-start);
+        }
+
+        .footer-documentation {
+            padding: 5px;
+            height: 100%;
+            flex-wrap: $flex-wrap;
+            @include flex-column(flex, column, flex-start, flex-start);
+        }
     }
-
-
-
 
 
     @media screen and (max-width: 480px) {
-        .picture {
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
+        .footer-product {
+            padding: 5px;
+            flex-wrap: $flex-wrap;
+            @include flex-column(flex, column, flex-start, flex-start);
         }
 
-        .text1 {
-            display: flex;
-            margin-top: 12px;
-            align-items: flex-start;
-            justify-content: space-between;
-            line-height: 25px;
-            padding: 0 20px;
+        .footer-company {
+            padding: 5px;
+            flex-wrap: $flex-wrap;
+            @include flex-column(flex, column, flex-start, flex-start);
         }
 
-        .text2 {
-            display: flex;
-            margin-top: 12px;
-            align-items: flex-start;
-            justify-content: space-between;
-            line-height: 25px;
-            padding: 0 20px;
+        .footer-help {
+            padding: 5px;
+            flex-wrap: $flex-wrap;
+            @include flex-column(flex, column, flex-start, flex-start);
         }
 
-        .text3 {
-            display: none;
+        .footer-documentation {
+            padding: 5px;
+            flex-wrap: $flex-wrap;
+            @include flex-column(none, column, flex-start, flex-start);
         }
-
     }
-
-
-
-
 }
