@@ -5,7 +5,8 @@
 
         &__background {
             width: $vp-full;
-            height: $hg-50vh;
+            height: $hg-80vh;
+            background-image: url(../images/bg-yootheme/hero-teaser-ff0a1b39.webp);
 
             img {
                 width: $full-width;
@@ -48,13 +49,11 @@
 @media screen and (min-width: 913px) {
     .bg-yootheme {
         position: $position-relative;
-        // padding: 13vh 0;
         @include d-flex(flex, center, center);
 
         &__background {
             width: $vp-full;
-            height: $hg-70vh;
-
+            height: $hg-80vh;
 
             img {
                 width: $vp-full;
@@ -106,7 +105,7 @@
 
         &__background {
             width: $vp-full;
-            height: $hg-50vh;
+            height: $hg-80vh;
 
             img {
                 width: $full-width;

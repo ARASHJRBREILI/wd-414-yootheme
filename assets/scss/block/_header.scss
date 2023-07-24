@@ -1,34 +1,27 @@
 @media screen and (min-width: 913px) {
     .header {
         width: $full-width;
-        height: $hg-header-desktop;
+        height: $hg-header-13vh;
         background-color: $bg-white;
         position: fixed;
+        flex-wrap: wrap;
         top: 0;
         z-index: 1000;
-
-        // flex-wrap: wrap;
         @include padding(1%, 1%);
         @include d-flex(flex, space-between, center);
 
-
         &__logo {
-            width: $vp-15;
-            height: $hg-fullheight;
-            margin: $margin-0;
             @include d-flex(flex, flex-start, center);
-
 
             img {
                 width: $vp-120px;
-                height: $hg-120px;
+                height: 100%;
             }
         }
 
-
         &__nav {
             width: $full-width;
-            flex: 4;
+            flex: 1;
             @include d-flex(flex, flex-end, center);
 
 
@@ -41,17 +34,14 @@
                 @include a(none, white, 8px 20px, #4c89f2, 20px);
             }
 
-
             a {
                 position: $position-relative;
                 overflow: hidden;
             }
 
-
             a:hover:not(:nth-child(10)) {
                 color: $text-hover-black;
             }
-
 
             a:hover:nth-child(10) {
                 background-color: $bg-a-blue-hover;

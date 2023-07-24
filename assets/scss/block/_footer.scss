@@ -21,6 +21,10 @@ footer {
             flex: 1;
             flex-wrap: $flex-wrap;
             @include flex-column(flex, column, flex-start, flex-start);
+            li {
+                display: flex;
+                flex-direction: column;
+            }
 
             a {
                 position: $position-relative;
@@ -54,11 +58,16 @@ footer {
             flex-wrap: $flex-wrap;
             height: 100%;
             flex: 1;
+            // line-height: 1.7rem;
             @include flex-column(flex, column, flex-start, flex-start);
 
             a {
                 position: $position-relative;
                 overflow: hidden;
+            }
+            button {
+                display: block;
+                line-height: 1.7rem;
             }
 
             a:hover {

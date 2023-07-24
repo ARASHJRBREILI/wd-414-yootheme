@@ -11,6 +11,7 @@ button {
   padding: 0;
   margin: 0;
   background-color: transparent;
+  color: rgb(96, 96, 96);
 }
 
 article {
@@ -37,6 +38,8 @@ a {
     height: 13vh;
     background-color: rgb(255, 255, 255);
     position: fixed;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     top: 0;
     z-index: 1000;
     padding-left: 1%;
@@ -52,9 +55,6 @@ a {
             align-items: center;
   }
   .header__logo {
-    width: 15%;
-    height: 100%;
-    margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -67,13 +67,13 @@ a {
   }
   .header__logo img {
     width: 120px;
-    height: 120px;
+    height: 100%;
   }
   .header__nav {
     width: 100%;
-    -webkit-box-flex: 4;
-        -ms-flex: 4;
-            flex: 4;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -333,7 +333,8 @@ a {
   }
   .bg-yootheme__background {
     width: 100%;
-    height: 50vh;
+    height: 80vh;
+    background-image: url(../images/bg-yootheme/hero-teaser-ff0a1b39.webp);
   }
   .bg-yootheme__background img {
     width: 100%;
@@ -386,7 +387,7 @@ a {
   }
   .bg-yootheme__background {
     width: 100%;
-    height: 70vh;
+    height: 80vh;
   }
   .bg-yootheme__background img {
     width: 100%;
@@ -441,7 +442,7 @@ a {
   }
   .bg-yootheme__background {
     width: 100%;
-    height: 50vh;
+    height: 80vh;
   }
   .bg-yootheme__background img {
     width: 100%;
@@ -2804,6 +2805,15 @@ footer {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  footer .footer-product li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   footer .footer-product a {
     position: relative;
     overflow: hidden;
@@ -2854,6 +2864,10 @@ footer {
   footer .footer-company a {
     position: relative;
     overflow: hidden;
+  }
+  footer .footer-company button {
+    display: block;
+    line-height: 1.7rem;
   }
   footer .footer-company a:hover {
     color: black;
