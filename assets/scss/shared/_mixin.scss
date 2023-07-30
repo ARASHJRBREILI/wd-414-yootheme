@@ -25,12 +25,10 @@
     border-radius: $border-radius;
 }
 
-
 @mixin a-hover($background-color, $color) {
     background-color: $background-color;
     color: $color;
 }
-
 
 @mixin d-none($position, $top, $right, $flex-direction) {
     position: $position;
@@ -92,6 +90,7 @@
     border: $border;
     border-radius: $border-radius;
 }
+
 @mixin input-hover($border,$box-shadow){
     border: $border;
     box-shadow: $box-shadow;
