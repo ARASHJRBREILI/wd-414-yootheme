@@ -2,7 +2,7 @@
     .body {
         height: 100vh;
         flex-wrap: $flex-wrap;
-        @include d-flex(flex, space-evenly, center);
+        @include flex-column(flex, none, space-evenly, center);
     }
 
     .introduction-text {
@@ -85,7 +85,7 @@
     .body {
         height: 100vh;
         flex-wrap: $flex-wrap;
-        @include d-flex(flex, space-evenly, center);
+        @include flex-column(flex, none, space-evenly, center);
     }
 
     .introduction-text {
@@ -169,7 +169,7 @@
         height: 100vh;
         flex-wrap: $flex-wrap;
         @include padding(2%, 2%);
-        @include d-flex(flex, space-around, inherit);
+        @include flex-column(flex, none, space-around, inherit);
     }
 
     .introduction-text {

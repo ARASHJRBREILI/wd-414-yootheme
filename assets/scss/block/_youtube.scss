@@ -172,7 +172,6 @@
     }
 
     .introduction-text {
-        // gap: $gap-20;
         @include flex-column(flex, column, center, flex-start);
 
         h5 {

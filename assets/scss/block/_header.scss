@@ -9,11 +9,11 @@
         top: 0;
         z-index: 1000;
         @include padding(1%, 1%);
-        @include d-flex(flex, space-evenly, center);
+        @include flex-column(flex, none, space-evenly, center);
 
         &__logo {
             flex: 0.2;
-            @include d-flex(flex, flex-start, center);
+            @include flex-column(flex, none, flex-start, center);
 
             img {
                 width: $vp-120px;
@@ -21,14 +21,13 @@
         }
 
         &__icon {
-            @include d-flex(none, flex-end, center);
+            @include flex-column(none, none, flex-end, center);
         }
 
         &__nav {
             width: $full-width;
             flex: 3;
-            @include d-flex(flex, flex-end, center);
-
+            @include flex-column(flex, none, flex-end, center);
 
             &--white {
                 @include a(none, rgb(96, 96, 96), 8px 20px, white, 0);
@@ -82,14 +81,13 @@
         top: 0;
         z-index: 1000;
         @include padding(4%, 4%);
-        @include d-flex(flex, space-between, center);
-
+        @include flex-column(flex, none, space-between, center);
 
         &__logo {
             width: $vp-25;
             height: $hg-fullheight;
             margin: $margin-0;
-            @include d-flex(flex, flex-start, center);
+            @include flex-column(flex, none, flex-start, center);
 
             img {
                 width: 120px;
@@ -101,8 +99,7 @@
             width: $vp-20;
             padding: 5px;
             @include d-none(absolute, 100%, 0, column);
-            @include d-flex(none, center, flex-start);
-
+            @include flex-column(none, none, center, flex-start);
 
             &--white,
             &--blue {
@@ -132,7 +129,7 @@
         }
 
         &__icon {
-            @include d-flex(flex, flex-end, center);
+            @include flex-column(flex, none, flex-end, center);
 
             i {
                 font-size: $font-size-1-1;
@@ -150,15 +147,14 @@
         z-index: 1000;
         background-color: $bg-white;
         @include padding(4%, 4%);
-        @include d-flex(flex, space-between, center);
-
+        @include flex-column(flex, none, space-between, center);
 
         &__logo {
             width: $vp-20;
             height: $hg-header-9vh;
             flex: 0.5;
             margin: $margin-0;
-            @include d-flex(flex, flex-start, center);
+            @include flex-column(flex, none, flex-start, center);
 
             a {
                 padding: 5px 13px;
@@ -169,7 +165,6 @@
                 width: 120px;
             }
 
-
             h1 {
                 font-size: $font-size-1;
             }
@@ -178,7 +173,7 @@
         &__nav {
             flex-wrap: wrap;
             @include d-none(absolute, 100%, 0, column);
-            @include d-flex(none, center, flex-start);
+            @include flex-column(none, none, center, flex-start);
 
             &--white,
             &--blue {
@@ -197,6 +192,7 @@
 
         &__icon {
             color: $text-black;
+
             i {
                 font-size: $font-size-1-1;
             }

@@ -2,7 +2,7 @@
     .body {
         height: 100vh;
         flex-wrap: $flex-wrap;
-        @include d-flex(flex, space-evenly, center);
+        @include flex-column(flex, none, space-evenly, center);
     }
 
     .introduction-text {
@@ -82,13 +82,10 @@
 
 
 @media screen and (min-width: 913px) {
-
-
-
     .body {
         height: 100vh;
         flex-wrap: $flex-wrap;
-        @include d-flex(flex, space-evenly, center);
+        @include flex-column(flex, none, space-evenly, center);
     }
 
     .introduction-text {
@@ -171,7 +168,7 @@
     .body {
         height: 100vh;
         flex-wrap: $flex-wrap;
-        @include d-flex(flex, space-around, inherit);
+        @include flex-column(flex, none, space-around, inherit);
     }
 
     .introduction-text {

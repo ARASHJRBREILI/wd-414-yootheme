@@ -1,8 +1,3 @@
-@mixin d-flex($flex, $justify-content, $align-items) {
-    display: $flex;
-    justify-content: $justify-content;
-    align-items: $align-items;
-}
 
 @mixin padding($padding-left, $padding-right) {
     padding-left: $padding-left;
@@ -28,17 +23,8 @@
     color: $color;
     padding: $padding;
     border-radius: $border-radius;
-    // backdrop-filter: blur(4px);
 }
 
-
-@mixin a-white-bg() {
-    text-decoration: $text-decoration;
-    color: $text-black;
-    padding: $padding;
-    background-color: $bg-white;
-    border-radius: $border-radius;
-}
 
 @mixin a-hover($background-color, $color) {
     background-color: $background-color;

@@ -2,23 +2,21 @@
     .advertising {
         width: $vp-full;
         height: 70px;
-        background-color: black;
+        background-color: $text-black;
         margin: 20px 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        &__general1 {
+        @include flex-column(flex, none, center, center);
+       
+        &__general {
             background-color: $bg-blue;
-            @include d-flex(flex, center, center);
+            @include flex-column(flex, none, center, center);
             @include advertising(0 10px, 55px, 55px, 50%);
         }
 
-        &__general1:hover {
+        &__general:hover {
             outline-offset: 4px;
         }
 
-        &__general1:hover svg {
+        &__general:hover svg {
             animation: shake 1s;
         }
 
@@ -40,57 +38,6 @@
             }
 
         }
-
-        &__general2 {
-            background-color: $bg-blue;
-            @include d-flex(flex, center, center);
-            @include advertising(0 10px, 55px, 55px, 50%);
-        }
-
-        &__general2:hover {
-            outline-offset: 4px;
-        }
-
-        &__general2:hover svg {
-            animation: shake 1s;
-        }
-
-        &__general3 {
-            background-color: $bg-blue;
-            @include d-flex(flex, center, center);
-            @include advertising(0 10px, 55px, 55px, 50%);
-
-        }
-
-        &__general3:hover {
-            outline-offset: 4px;
-        }
-
-        &__general3:hover {
-            outline-offset: 4px;
-        }
-
-        &__general3:hover svg {
-            animation: shake 1s;
-        }
-
-        &__general4 {
-            background-color: $bg-blue;
-            @include d-flex(flex, center, center);
-            @include advertising(0 10px, 55px, 55px, 50%);
-        }
-
-        &__general4:hover {
-            outline-offset: 4px;
-        }
-
-        &__general4:hover {
-            outline-offset: 4px;
-        }
-
-        &__general4:hover svg {
-            animation: shake 1s;
-        }
     }
 }
 
@@ -100,33 +47,13 @@
     .advertising {
         width: $vp-full;
         height: 70px;
-        background-color: black;
+        background-color: $text-black;
         margin: 20px 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-column(flex, none, center, center);
 
-        &__general1 {
+        &__general {
             background-color: $bg-blue;
-            @include d-flex(flex, center, center);
-            @include advertising(0 10px, 55px, 55px, 50%);
-        }
-
-        &__general2 {
-            background-color: $bg-blue;
-            @include d-flex(flex, center, center);
-            @include advertising(0 10px, 55px, 55px, 50%);
-        }
-
-        &__general3 {
-            background-color: $bg-blue;
-            @include d-flex(flex, center, center);
-            @include advertising(0 10px, 55px, 55px, 50%);
-        }
-
-        &__general4 {
-            background-color: $bg-blue;
-            @include d-flex(flex, center, center);
+            @include flex-column(flex, none, center, center);
             @include advertising(0 10px, 55px, 55px, 50%);
         }
     }
@@ -140,33 +67,13 @@
     .advertising {
         width: $vp-full;
         height: 70px;
-        background-color: black;
+        background-color: $text-black;
         margin: 20px 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-column(flex, none, center, center);
 
-        &__general1 {
+        &__general {
             background-color: $bg-blue;
-            @include d-flex(flex, center, center);
-            @include advertising(0 10px, 55px, 55px, 50%);
-        }
-
-        &__general2 {
-            background-color: $bg-blue;
-            @include d-flex(flex, center, center);
-            @include advertising(0 10px, 55px, 55px, 50%);
-        }
-
-        &__general3 {
-            background-color: $bg-blue;
-            @include d-flex(flex, center, center);
-            @include advertising(0 10px, 55px, 55px, 50%);
-        }
-
-        &__general4 {
-            background-color: $bg-blue;
-            @include d-flex(flex, center, center);
+            @include flex-column(flex, none, center, center);
             @include advertising(0 10px, 55px, 55px, 50%);
         }
     }

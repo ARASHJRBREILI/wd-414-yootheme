@@ -4,8 +4,7 @@
         height: 10vh;
         margin-top: 35px;
         gap: $gap;
-        flex-direction: column;
-        @include d-flex(flex, space-between, center);
+        @include flex-column(flex, column, space-between, center);
         @include padding(2%, 2%);
 
         &__primery {
@@ -29,7 +28,7 @@
         height: $hg-10vh;
         margin: $margin-top-bottom 0;
         gap: $gap;
-        @include d-flex(flex, space-between, center);
+        @include flex-column(flex, none, space-between, center);
         @include padding(1%, 1%);
 
         &__primery {
@@ -51,10 +50,8 @@
     .yootheme {
         width: $vp-full;
         height: 190px;
-        margin-top: -50px;
         gap: $gap;
-        flex-direction: column;
-        @include d-flex(flex, space-between, center);
+        @include flex-column(flex, column, space-between, center);
         @include padding(2%, 2%);
 
         &__primery {
@@ -67,9 +64,6 @@
         }
     }
 }
-
-
-
 
 #blue {
     color: $bg-a-blue-hover;

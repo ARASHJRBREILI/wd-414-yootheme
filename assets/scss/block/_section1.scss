@@ -1,13 +1,13 @@
 @media screen and (max-width: 913px) {
     .bg-yootheme {
         position: $position-relative;
-        @include d-flex(flex, center, center);
+        @include flex-column(flex, none, center, center);
 
         &__background {
             width: $vp-full;
             height: $hg-80vh;
-            // margin-top: 13vh;
             background-image: url(../images/bg-yootheme/hero-teaser-ff0a1b39.webp);
+            @include bg-set(no-repeat, cover, center);
 
             img {
                 width: $full-width;
@@ -17,10 +17,10 @@
 
         &__discription {
             position: $position-absolute;
-            top: 42%;
-            left: 50%;
-            transform: translate(-50%, 50%);
-            width: $vp-70;
+            top: 50%;
+            width: 60%;
+            width: $vp-full;
+            height: $vp-50;
             text-align: $text-align-center;
             line-height: $line-height-1-7;
 
@@ -37,7 +37,7 @@
             a:nth-child(2n) {
                 display: $display-inline-block;
                 margin: 15px;
-                @include a-white-bg();
+                @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
             }
         }
     }
@@ -50,11 +50,13 @@
 @media screen and (min-width: 913px) {
     .bg-yootheme {
         position: $position-relative;
-        @include d-flex(flex, center, center);
+        @include flex-column(flex, none, center, center);
 
         &__background {
             width: $vp-full;
             height: $hg-80vh;
+            background-image: url(../images/bg-yootheme/hero-teaser-ff0a1b39.webp);
+            @include bg-set(no-repeat, cover, center);
 
             img {
                 width: $vp-full;
@@ -65,7 +67,7 @@
         &__discription {
             position: $position-absolute;
             top: 50%;
-            width: 60%;
+            width: $vp-50;
             text-align: $text-align-center;
             line-height: $line-height-1-5;
 
@@ -82,7 +84,7 @@
             a:nth-child(2n) {
                 display: $display-inline-block;
                 margin: $margin-15px;
-                @include a-white-bg();
+                @include a(none, rgb(96, 96, 96), 8px 20px, white, 20px);
             }
 
             a:nth-child(2n):hover {
@@ -100,13 +102,13 @@
 @media screen and (max-width: 480px) {
     .bg-yootheme {
         position: $position-relative;
-        padding: $hg-header-9vh 0;
-        @include d-flex(flex, center, center);
-
+        @include flex-column(flex, none, center, center);
 
         &__background {
             width: $vp-full;
             height: $hg-80vh;
+            background-image: url(../images/bg-yootheme/hero-teaser-ff0a1b39.webp);
+            @include bg-set(no-repeat, cover, center);
 
             img {
                 width: $full-width;
@@ -114,11 +116,10 @@
             }
         }
 
-
         &__discription {
             position: $position-absolute;
-            top: 27%;
-            width: $vp-90;
+            top: 50%;
+            width: $vp-full;
             text-align: $text-align-center;
             line-height: $line-height-1-5;
 
@@ -131,7 +132,6 @@
             a:nth-child(2n) {
                 display: $display-inline-block;
                 margin: $margin-15px;
-                @include a-white-bg();
             }
         }
     }

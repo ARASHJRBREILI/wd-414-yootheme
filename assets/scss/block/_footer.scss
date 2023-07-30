@@ -3,7 +3,6 @@ footer {
     height: 19rem;
     line-height: $line-height-1-7;
     flex-wrap: $flex-wrap;
-    
     @include flex-column(flex, row, space-between, center);
 
     @media screen and (min-width: 913px) {
@@ -59,7 +58,6 @@ footer {
             flex-wrap: $flex-wrap;
             height: 100%;
             flex: 1;
-            // line-height: 1.7rem;
             @include flex-column(flex, column, flex-start, flex-start);
 
             a {
@@ -163,7 +161,6 @@ footer {
         }
     }
 
-
     @media screen and (max-width: 913px) {
         .picture {
             height: 100%;
@@ -206,7 +203,6 @@ footer {
             @include flex-column(flex, column, flex-start, flex-start);
         }
     }
-
 
     @media screen and (max-width: 480px) {
         .footer-product {
