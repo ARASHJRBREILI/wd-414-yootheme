@@ -5,23 +5,28 @@
         background-color: $bg-white;
         position: fixed;
         flex-wrap: wrap;
+        flex-direction: row;
         top: 0;
         z-index: 1000;
         @include padding(1%, 1%);
-        @include d-flex(flex, space-between, center);
+        @include d-flex(flex, space-evenly, center);
 
         &__logo {
+            flex: 0.2;
             @include d-flex(flex, flex-start, center);
 
             img {
                 width: $vp-120px;
-                height: 100%;
             }
+        }
+
+        &__icon {
+            @include d-flex(none, flex-end, center);
         }
 
         &__nav {
             width: $full-width;
-            flex: 1;
+            flex: 3;
             @include d-flex(flex, flex-end, center);
 
 
@@ -65,18 +70,8 @@
                 transform: rotateX(0);
             }
         }
-
-
-        &__icon {
-            @include d-flex(none, flex-end, center);
-        }
     }
 }
-
-
-
-
-
 
 @media screen and (max-width: 913px) {
     .header {
@@ -97,8 +92,7 @@
             @include d-flex(flex, flex-start, center);
 
             img {
-                width: 140px;
-                height: 120px;
+                width: 120px;
             }
         }
 
@@ -134,9 +128,8 @@
             display: flex;
             z-index: 1000;
             width: 38%;
-            background-color: rgba(130, 130, 130, 0.3);
+            background-color: rgba(148, 148, 148, 0.8);
         }
-
 
         &__icon {
             @include d-flex(flex, flex-end, center);
@@ -148,11 +141,6 @@
     }
 }
 
-
-
-
-
-
 @media screen and (max-width: 480px) {
     .header {
         min-width: $full-width;
@@ -161,7 +149,6 @@
         top: 0;
         z-index: 1000;
         background-color: $bg-white;
-        // position: $position-relative;
         @include padding(4%, 4%);
         @include d-flex(flex, space-between, center);
 
@@ -180,7 +167,6 @@
 
             img {
                 width: 120px;
-                height: 140px;
             }
 
 
@@ -190,10 +176,9 @@
         }
 
         &__nav {
-            // width: 42%;
+            flex-wrap: wrap;
             @include d-none(absolute, 100%, 0, column);
             @include d-flex(none, center, flex-start);
-
 
             &--white,
             &--blue {
@@ -205,15 +190,13 @@
             display: flex;
             flex-wrap: wrap;
             z-index: 2;
-            background-color: rgba(130, 130, 130, 0.3);
+            background-color: rgba(148, 148, 148, 0.8);
             width: 50%;
         }
 
 
         &__icon {
             color: $text-black;
-
-
             i {
                 font-size: $font-size-1-1;
             }

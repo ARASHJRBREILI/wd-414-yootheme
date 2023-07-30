@@ -1,5 +1,5 @@
 @media screen and (max-width: 913px) {
-    body {
+    .body {
         height: 100vh;
         flex-wrap: $flex-wrap;
         @include d-flex(flex, space-evenly, center);
@@ -85,7 +85,7 @@
 
 
 
-    body {
+    .body {
         height: 100vh;
         flex-wrap: $flex-wrap;
         @include d-flex(flex, space-evenly, center);
@@ -168,7 +168,7 @@
 
 
 @media screen and (max-width: 480px) {
-    body {
+    .body {
         height: 100vh;
         flex-wrap: $flex-wrap;
         @include d-flex(flex, space-around, inherit);

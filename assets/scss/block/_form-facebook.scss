@@ -1,5 +1,5 @@
 @media screen and (max-width: 913px) {
-    body {
+    .body {
         height: 100vh;
         flex-wrap: $flex-wrap;
         @include d-flex(flex, space-evenly, center);
@@ -82,10 +82,7 @@
 
 
 @media screen and (min-width: 913px) {
-
-
-
-    body {
+    .body {
         height: 100vh;
         flex-wrap: $flex-wrap;
         @include d-flex(flex, space-evenly, center);
@@ -168,14 +165,14 @@
 
 
 @media screen and (max-width: 480px) {
-    body {
+    .body {
         height: 100vh;
         flex-wrap: $flex-wrap;
+        @include padding(2%, 2%);
         @include d-flex(flex, space-around, inherit);
     }
 
     .introduction-text {
-        // gap: $gap-20;
         @include flex-column(flex, column, center, flex-start);
 
         h5 {

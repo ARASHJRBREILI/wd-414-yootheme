@@ -1,13 +1,13 @@
 footer {
     flex: 1;
-    padding: 0 10px;
     height: 19rem;
     line-height: $line-height-1-7;
     flex-wrap: $flex-wrap;
+    
     @include flex-column(flex, row, space-between, center);
 
     @media screen and (min-width: 913px) {
-
+        @include padding(12rem, 12rem);
         .picture {
             height: 100%;
             flex: 1;
@@ -21,6 +21,7 @@ footer {
             flex: 1;
             flex-wrap: $flex-wrap;
             @include flex-column(flex, column, flex-start, flex-start);
+
             li {
                 display: flex;
                 flex-direction: column;
@@ -65,6 +66,7 @@ footer {
                 position: $position-relative;
                 overflow: hidden;
             }
+
             button {
                 display: block;
                 line-height: 1.7rem;
