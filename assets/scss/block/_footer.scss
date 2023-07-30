@@ -7,6 +7,7 @@ footer {
 
     @media screen and (min-width: 913px) {
         @include padding(12rem, 12rem);
+
         .picture {
             height: 100%;
             flex: 1;
@@ -162,15 +163,16 @@ footer {
     }
 
     @media screen and (max-width: 913px) {
+        @include padding(5rem, 5rem);
         .picture {
-            height: 100%;
+            height: $vp-full;
             flex: 1;
             @include flex-column(flex, column, flex-start, flex-start);
         }
 
         .footer-product {
             padding: 5px;
-            height: 100%;
+            height: $vp-full;
             flex: 1;
             flex-wrap: $flex-wrap;
             @include flex-column(flex, column, flex-start, flex-start);
@@ -178,7 +180,7 @@ footer {
 
         .footer-company {
             padding: 5px;
-            height: 100%;
+            height: $vp-full;
             flex-wrap: $flex-wrap;
             flex: 1;
 
@@ -187,7 +189,7 @@ footer {
 
         .footer-help {
             padding: 5px;
-            height: 100%;
+            height: $vp-full;
             flex-wrap: $flex-wrap;
             flex: 1;
 
@@ -196,7 +198,7 @@ footer {
 
         .footer-documentation {
             padding: 5px;
-            height: 100%;
+            height: $vp-full;
             flex-wrap: $flex-wrap;
             flex: 1;
 
@@ -205,6 +207,8 @@ footer {
     }
 
     @media screen and (max-width: 480px) {
+        @include padding(0rem, 0rem);
+
         .footer-product {
             padding: 5px;
             flex-wrap: $flex-wrap;
